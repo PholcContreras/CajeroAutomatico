@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Prácticas DEV.F</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./estilos.css" />
+    <script defer src="./arreglos.js"></script>
+</head>
+<body>
+    <div class="cuerpo" id="cuadro1" >
+    <form id="login-form">
+        <div class="form">
+             <h1 class="titulo">Banco DEVF</h1>
+             <div class="G1">
+                <input class="inp"name="name"  type="name"  required><span class="barra"></span>
+                 <label class="l1" for="">username</label>
+            </div>
+             <div class="G1">
+                <input class="inp" name="pass"  type="password"   required><span class="barra"></span>
+                 <label class="l1" for="">password</label>
+            </div>
+            <button class="iniciar_secion" type="submit">Iniciar Sesión</button>
+        </div>
+    </form>
+</div>   
+<div class="cuerpo2" id="cuadro2">
+    <div class="response"></div>
+    <div class="Caja">
+       <h1 class="titulo_2">Escoja una de las opciones</h1>
+       <button id="C2B1"  class="boton">Consultar Saldo</button> 
+    </div> 
+     <div class="Caja">
+      <button id="C2B2" class="boton">Ingresar Monto</button> 
+          </button>
+    </div>
+     <div class="Caja">
+        <button id="C2B3" class="boton">Retirar Monto</button> 
+    </div> 
+    <div ><button class="back" id="back_0" >retroceder</button></div>
+</div>
+<div class="cuerpo3" id="cuadro3">
+    <div class="C3" id="C3_1">
+         <h1 class="sub_titulo">Saldo Actual</h1>
+        <h2 name="Saldo"  type="text" id="CT">0</h2> 
+    </div> 
+    
+    <div ><button class="back" id="back_1">retroceder</button></div>
+</div>
+<div class="cuerpo4" id="cuadro4">
+     <div class="C3" id="C3_2">
+        <label for="" class="sub_titulo">Ingresar Monto</label>
+        <input class="inp2" name="cantidad1"  type="text" id="C1"  placeholder="Ingresar cantidad" >
+        <input class="aceptar" type="button" value="Aceptar" id="bt1" onclick="formula1()"> 
+    </div>
+    <div class="response2"></div>
+
+    <div ><button class="back" id="back_2">retroceder</button></div>
+</div>
+<div class="cuerpo5" id="cuadro5">
+     <div class="C3" id="C3_3">
+         <label for="">Retirar Monto</label>
+        <input class="inp2"  name="cantidad2"  type="text" id="C2"  placeholder="Ingresar cantidad" >
+        <input class="aceptar" type="button" value="Aceptar" id="bt2" onclick="formula2()"> 
+    </div> 
+    <div class="response3"></div>
+
+    <div ><button  class="back" id="back_3">retroceder</button></div>
+</div>
+  
+</body>
+</html>
